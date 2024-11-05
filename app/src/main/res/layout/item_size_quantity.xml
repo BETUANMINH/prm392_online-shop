@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="8dp">
+
+    <!-- Label for Size Number -->
+    <TextView
+        android:id="@+id/tvSizeNumberLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Size Number:"
+        android:layout_marginEnd="8dp"/>
+
+    <!-- Size Input -->
+    <EditText
+        android:id="@+id/etSize"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:inputType="number" />
+
+    <!-- Label for Quantity -->
+    <TextView
+        android:id="@+id/tvQuantityLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity:"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"/>
+
+    <!-- Quantity Input -->
+    <EditText
+        android:id="@+id/etQuantity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:inputType="number" />
+
+    <!-- ImageButton to remove the size-quantity input pair -->
+    <ImageButton
+        android:id="@+id/btnRemoveSizeQuantity"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="?attr/selectableItemBackground"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/ic_delete"
+        android:contentDescription="Delete"/>
+</LinearLayout>

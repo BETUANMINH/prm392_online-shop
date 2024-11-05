@@ -1,0 +1,172 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- Label for Product Title -->
+    <TextView
+        android:id="@+id/tvLabelTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title:"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Title Input -->
+    <EditText
+        android:id="@+id/etProductTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter product title"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvLabelTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="8dp"/>
+
+    <!-- Label for Product Description -->
+    <TextView
+        android:id="@+id/tvLabelDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description:"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/etProductTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Description Input -->
+    <EditText
+        android:id="@+id/etProductDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter product description"
+        app:layout_constraintTop_toBottomOf="@id/etProductTitle"
+        app:layout_constraintStart_toEndOf="@id/tvLabelDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="8dp"/>
+
+    <!-- Label for Category -->
+    <TextView
+        android:id="@+id/tvLabelCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category:"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/etProductDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Category Spinner -->
+    <Spinner
+        android:id="@+id/spinnerCategory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/etProductDescription"
+        app:layout_constraintStart_toEndOf="@id/tvLabelCategory"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Label for Product Price -->
+    <TextView
+        android:id="@+id/tvLabelPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price:"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/spinnerCategory"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Price Input -->
+    <EditText
+        android:id="@+id/etProductPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter product price"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/spinnerCategory"
+        app:layout_constraintStart_toEndOf="@id/tvLabelPrice"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="8dp"/>
+
+    <!-- Label for Product Rating -->
+    <TextView
+        android:id="@+id/tvLabelRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rating:"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/etProductPrice"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Rating Input -->
+    <EditText
+        android:id="@+id/etProductRating"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter product rating"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/etProductPrice"
+        app:layout_constraintStart_toEndOf="@id/tvLabelRating"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="8dp"/>
+
+    <!-- Size and Quantity Section Label -->
+    <TextView
+        android:id="@+id/tvLabelSizeQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Size and Quantity:"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/etProductRating"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- LinearLayout to contain dynamic size and quantity inputs -->
+    <LinearLayout
+        android:id="@+id/sizeQuantityContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/tvLabelSizeQuantity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Button to add new size-quantity pair -->
+    <Button
+        android:id="@+id/btnAddSizeQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Size"
+        app:layout_constraintTop_toBottomOf="@id/sizeQuantityContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Button to Upload Image, positioned below the "Add Size" button -->
+    <Button
+        android:id="@+id/btnUploadImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Upload Image"
+        app:layout_constraintTop_toBottomOf="@id/btnAddSizeQuantity"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Product Image Preview with black border -->
+    <ImageView
+        android:id="@+id/imgProductPreview"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/black"
+        android:contentDescription="No Image Uploaded"
+        app:layout_constraintTop_toBottomOf="@id/btnUploadImage"
+        app:layout_constraintStart_toStartOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#FF5722</color> <!-- Deep Orange -->
+    <color name="colorPrimaryDark">#E64A19</color> <!-- Darker shade of Primary -->
+    <color name="colorAccent">#FFC107</color> <!-- Amber -->
+
+    <!-- Secondary Colors -->
+    <color name="colorSecondary">#4CAF50</color> <!-- Green -->
+    <color name="colorSecondaryDark">#388E3C</color> <!-- Darker Green -->
+    <color name="colorTertiary">#03A9F4</color> <!-- Light Blue -->
+
+    <!-- Text Colors -->
+    <color name="textColorPrimary">#212121</color> <!-- Dark Gray for Primary Text -->
+    <color name="textColorSecondary">#757575</color> <!-- Lighter Gray for Secondary Text -->
+    <color name="textColorHint">#9E9E9E</color> <!-- Even Lighter Gray for Hints -->
+
+    <!-- Background Colors -->
+    <color name="backgroundColor">#FFFFFF</color> <!-- White Background -->
+    <color name="backgroundColorLight">#F1F8E9</color> <!-- Light Greenish Background -->
+    <color name="backgroundColorDark">#303F9F</color> <!-- Indigo Dark Background -->
+
+    <!-- Button Colors -->
+    <color name="buttonColorNormal">#009688</color> <!-- Teal -->
+    <color name="buttonColorPressed">#00796B</color> <!-- Darker Teal -->
+    <color name="buttonColorDisabled">#B0BEC5</color> <!-- Light Gray for Disabled Button -->
+
+    <!-- Border Colors -->
+    <color name="borderColor">#607D8B</color> <!-- Blue Gray Border -->
+    <color name="dividerColor">#CFD8DC</color> <!-- Light Blue Gray Divider -->
+
+    <!-- Status Colors (Success, Warning, Error) -->
+    <color name="colorSuccess">#4CAF50</color> <!-- Green for Success -->
+    <color name="colorWarning">#FFC107</color> <!-- Amber for Warning -->
+    <color name="colorError">#F44336</color> <!-- Red for Error -->
+
+    <!-- Miscellaneous -->
+    <color name="colorInfo">#03A9F4</color> <!-- Light Blue for Info -->
+    <color name="colorNeutral">#9E9E9E</color> <!-- Neutral Gray -->
+
+    <!-- Shades of Blue and Purple -->
+    <color name="blueLight">#81D4FA</color> <!-- Light Blue -->
+    <color name="blueDark">#1565C0</color> <!-- Dark Blue -->
+    <color name="purpleLight">#E1BEE7</color> <!-- Light Purple -->
+    <color name="purpleDark">#8E24AA</color> <!-- Dark Purple -->
+
+    <!-- Shades of Yellow and Orange -->
+    <color name="yellowLight">#FFECB3</color> <!-- Light Yellow -->
+    <color name="orangeDark">#EF6C00</color> <!-- Dark Orange -->
+
+    <!-- Transparent -->
+    <color name="transparent">#00000000</color> <!-- Transparent -->
+    <color name="light_grey">#D3D3D3</color>
+    <color name="com_facebook_button_background_color_focused_disabled">#FF0000</color>
+    <color name="com_facebook_button_background_color_disabled">#FF0000</color>
+    <color name="com_facebook_button_background_color_focused">#FF0000</color>
+    <color name="com_facebook_button_border_color_focused">#FF0000</color> <!-- Add this line -->
+    <color name="background_color">#F5F5F5</color>
+    <color name="primary_text_color">#212121</color>
+    <color name="secondary_text_color">#757575</color>
+    <color name="radio_button_text_color">#424242</color>
+    <color name="radio_button_tint">#FF5722</color> <!-- Replace with your desired color -->    
+    <color name="radio_group_background">#FFFFFF</color>
+    <color name="radio_group_stroke">#E0E0E0</color>
+    <color name="gray_text">#666666</color>
+    <color name="gray_icon">#757575</color>
+    <color name="red">#F44336</color>
+    <color name="primary">#1976D2</color>
+    <color name="orange">#FF9800</color>
+    <color name="cardBackground">#FFFFFF</color> <!-- Example: white background -->
+    <color name="primaryText">#212121</color> <!-- Example: dark text color -->
+    <color name="secondaryText">#757575</color> <!-- Example: grey text color -->
+    <color name="buttonBackground">#6200EE</color> <!-- Example: purple button background -->
+    <color name="buttonText">#FFFFFF</color> <!-- Example: white button text -->
+    <color name="secondary">#FF0000</color> <!-- Replace with your desired color -->
+    <color name="backgroundLight">#F5F5F5</color> <!-- Light gray background -->
+</resources>

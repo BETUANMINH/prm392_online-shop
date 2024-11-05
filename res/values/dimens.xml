@@ -1,0 +1,4 @@
+<resources>
+    <!-- Other dimension definitions -->
+    <dimen name="fab_margin">16dp</dimen>
+</resources>
